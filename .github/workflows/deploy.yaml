@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: SHow env var
+        run: |
+          echo $BTN_TEXT
+
       - name: Build Project
         run: npm run build
         env:
