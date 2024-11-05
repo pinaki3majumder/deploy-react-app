@@ -11,7 +11,7 @@ function App() {
       <h1>Hey, click on the button to open the modal.</h1>
       <button className="openModalBtn" onClick={() => setModalOpen(true)}>
         {process.env.BTN_TEXT || "Open"} <be />
-        ${{ vars.BTN_TEXT }}
+        ${BTN_TEXT}
       </button>
 
       <Modal
