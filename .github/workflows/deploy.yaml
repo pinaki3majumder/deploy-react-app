@@ -27,7 +27,7 @@ jobs:
       - name: Build Project
         run: npm run build
         env:
-          BTN_TEXT: ${{ env.BTN_TEXT }}
+          BTN_TEXT: ${{ vars.BTN_TEXT }}
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0
