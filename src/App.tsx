@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <h1>Hey, click on the button to open the modal.</h1>
       <button className="openModalBtn" onClick={() => setModalOpen(true)}>
-        {jobs.build_and_deploy.env.BTN_TEXT || "Open"}
+        ${jobs.build_and_deploy.env.BTN_TEXT || "Open"}
       </button>
 
       <Modal
