@@ -1,6 +1,6 @@
 import './Home.css'
 import { useState } from "react";
-import { Modal } from '../Modal/Modal';
+import { Modal } from '../common/Modal/Modal';
 
 function Home() {
 
