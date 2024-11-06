@@ -12,14 +12,14 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     env:
-      BTN_TEXT: ${{ vars.BTN_TEXT }}
+      REACT_APP_BTN_TEXT: ${{ vars.REACT_APP_BTN_TEXT }}
 
     steps:
       - name: Read a variable
-        run: echo "My BTN_TEXT value is ${{ vars.BTN_TEXT }}"
+        run: echo "My REACT_APP_BTN_TEXT value is ${{ vars.REACT_APP_BTN_TEXT }}"
 
       - name: Read an env variable
-        run: echo "My BTN_TEXT value is ${{ env.BTN_TEXT }} (also accessible as $BTN_TEXT)"
+        run: echo "My REACT_APP_BTN_TEXT value is ${{ env.REACT_APP_BTN_TEXT }} (also accessible as $REACT_APP_BTN_TEXT)"
         
       - name: Checkout repository
         uses: actions/checkout@v3
