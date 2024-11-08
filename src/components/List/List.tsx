@@ -13,7 +13,7 @@ function MyList() {
     return {
       id: idx,
       name: 'John Doe',
-      image: 'http://via.placeholder.com/40',
+      image: 'https://via.placeholder.com/40',
       text: loremIpsum({
         count: 1,
         units: 'sentences',
