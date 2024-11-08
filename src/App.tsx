@@ -1,7 +1,7 @@
 import './App.css'
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
-import List from './components/List/List';
+import MyList from './components/List/List';
 
 function App() {
 
@@ -9,7 +9,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/list" element={<List />} />
+        <Route path="/list" element={<MyList />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </HashRouter>
