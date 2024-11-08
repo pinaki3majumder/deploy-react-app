@@ -13,7 +13,7 @@ function MyList() {
     return {
       id: idx,
       name: 'John Doe',
-      image: 'https://via.placeholder.com/40',
+      image: 'http://via.placeholder.com/40',
       text: loremIpsum({
         count: 1,
         units: 'sentences',
@@ -27,7 +27,7 @@ function MyList() {
     return (
       <div key={key} style={style} className="row">
         <div className="image">
-          <img src={list[index].image} alt="" />
+          <img key={index} src={list[index].image} alt="Placeholder" onError={(e) => e.currentTarget.src = "https://dummyimage.com/40x40/cccccc/ffffff"} />
         </div>
         <div className="content">
           <div>{list[index].name}</div>
@@ -46,7 +46,7 @@ function MyList() {
           rowHeight={rowHeight}
           rowRenderer={renderRow}
           rowCount={list.length}
-          overscanRowCount={3} 
+          overscanRowCount={3}
         />
       </div>
     </div>
