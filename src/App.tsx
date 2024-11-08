@@ -1,18 +1,18 @@
 import './App.css'
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import List from './components/List/List';
 
 function App() {
 
   return (
-    <Router>
+    <HashRouter>
       <Routes>
-        <Route path="/deploy-react-app" element={<Home />} />
-        <Route path="/deploy-react-app/list" element={<List />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/list" element={<List />} />
         <Route path="*" element={<Home />} />
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
