@@ -9,7 +9,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/deploy-react-app" element={<Home />} />
-        <Route path="/list" element={<List />} />
+        <Route path="/deploy-react-app/list" element={<List />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </Router>
