@@ -3,6 +3,8 @@ name: CI-CD for React app
 on:
   push:
     branches: [master]
+    paths-ignore:
+      - '**.md'
   workflow_dispatch: 
 
 permissions:
