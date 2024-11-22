@@ -25,7 +25,7 @@ To ensure a smooth deployment of your React application, keep the following poin
 1. ##### Environment Variable Naming
     All environment variables in a React application should start with `REACT_APP_`.
 2. ##### Routing Configuration
-    Use the HashRouter library for routing to ensure compatibility with GitHub Pages.
+    Use the `HashRouter` library for routing to ensure compatibility with GitHub Pages.
 3. ##### Setting the Home Page
    - Navigate to Pages / GitHub Pages in your repository settings and copy the site URL (e.g., https://username.github.io/repository-name).
 
