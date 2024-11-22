@@ -18,3 +18,21 @@ In the project directory, you can run:
 - Run: `npm start`
 - Build: `npm run build`
 
+
+## Deployment Guidelines for React Applications
+To ensure a smooth deployment of your React application, keep the following points in mind:
+
+1. ##### Environment Variable Naming
+    All environment variables in a React application should start with `REACT_APP_`.
+2. ##### Routing Configuration
+    Use the HashRouter library for routing to ensure compatibility with GitHub Pages.
+3. ##### Setting the Home Page
+   - Navigate to Pages / GitHub Pages in your repository settings and copy the site URL (e.g., https://username.github.io/repository-name).
+
+   - Update your `package.json` file by adding or modifying the homepage field
+
+    ```bash
+    "homepage": "https://username.github.io/repository-name/#"
+4. ##### Deployment Branch Configuration
+    - Go to `Pages / GitHub Pages` in your repository settings.
+    - Set the `deployment branch` to `gh-pages`, as specified in your workflow YAML file.
